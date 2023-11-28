@@ -259,7 +259,7 @@
       ),
       url(https://www.cronista.com/files/image/518/518379/64198491e3100.jpg)
         no-repeat center;
-    height: 500px;
+    height: auto;
     background-size: cover;
    
   }
@@ -470,6 +470,7 @@
   align-items: center;
   z-index: 2;
 }
+
 .prev-list-mod{
 margin-top: 20px;
 column-count: 3;
