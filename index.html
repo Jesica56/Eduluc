@@ -3,114 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduluc y Cia S.R.L</title>
     <link rel="stylesheet" href="./css/styles.css" />
-
+    <!-- Agrega los enlaces a los estilos de Bootstrap -->
     <link
       rel="stylesheet"
-      href="https://openlayers.org/en/v4.6.5/css/ol.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyL/J5r8Z5LAFQFb0Cgt5vNAu2lDwlwWx"
+      crossorigin="anonymous"
+    />
+
+    <!--Google -Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin-ext"
+      rel="stylesheet"
       type="text/css"
     />
 
-    <title>Eduluc</title>
-    <script
-      src="https://code.jquery.com/jquery-2.2.0.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Font-awsome-->
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav class="nav-container">
-        <button class="nav-button"></button>
-        <img class="nav-logo" src="./assents/img/eduluclogo.png" />
-        <span>MORENO-MORENO y Cia S.R.L</span>
-        <ul class="menu-container">
-          <li class="menu-item">
-            <a class="menu-link" href="#inicio">INICIO</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#nosotros">EMPRESA</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#distribuidora">SERVICIOS</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#contact">CONTACTO</a>
-          </li>
-        </ul>
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="#Inicio"
+              ><img class="nav-logo" src="./assents/img/eduluclogo.png"
+            /></a>
+            <a href="#">MORENO - MORENO & Cia S.R.L</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="#Institucional">Institucional</a></li>
+              <li><a href="#Servicios">Servicios</a></li>
+              <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="inicio" class="video-section">
-        <h1 class="titulo-video">Eduluc y Cia S.R.L</h1>
+      <section id="Inicio" class="Carrusel-ini">
+        <div class="carrousel">
+          <div class="grande" id="carrouselGrande">
+            <div class="img">
+              <img
+                class="imagenes"
+                src="./assents/fotos/drive-download-20231212T185845Z-001/primero.jpg"
+              />
+            </div>
+            <div class="img">
+              <img
+                class="imagenes"
+                src="./assents/fotos/drive-download-20231212T185845Z-001/segundo.jpg"
+              />
+            </div>
+            <div class="img">
+              <img
+                class="imagenes"
+                src="./assents/fotos/drive-download-20231212T185845Z-001/tercero.jpg"
+              />
+            </div>
+            <div class="img">
+              <img
+                class="imagenes"
+                src="./assents/fotos/drive-download-20231212T185845Z-001/cuarto.jpg"
+              />
+            </div>
+            <div class="img">
+              <img
+                class="imagenes"
+                src="./assents/fotos/drive-download-20231212T185845Z-001/quinto.jpg"
+              />
+            </div>
+            <!-- Añade más imágenes según sea necesario -->
+          </div>
+          <div class="puntos" id="puntos"></div>
+        </div>
       </section>
 
-      <section id="nosotros">
-        <div class="txt-container">
-          <h2 class="txt-Empresa">Nosotros</h2>
-
-          <p class="txt-reseña">
-            Eduluc y Cia S.R.L es una destacada empresa distribuidora de lácteos
-            con sede en Salta. Desde nuestros inicios, nos hemos comprometido a
-            proporcionar productos lácteos de la más alta calidad a nuestros
-            clientes, convirtiéndonos en un socio confiable en la industria de
-            alimentos y bebidas.
+      <section id="Institucional">
+        <div class="titulo">
+          <div class="texto">
+            <h5>Quienes somos</h5>
+            <h2>
+              Moreno-Moreno y Cía. SRL es una empresa dedicada a la logística y
+              distribución de productos de La Serenísima...
+            </h2>
+          </div>
+          <img
+            src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0012.jpg"
+            alt=""
+          />
+        </div>
+        <div class="Historia" id="parte-1">
+          <p>
+            Que inició sus actividades en xxx , teniendo como antecesora a un
+            distribuidora unipersonal de Eduardo Moreno, uno de los socios
+            fundadores de la empresa. Actualmente tiene su sede en Avenida
+            Rodríguez Durañona N ° 2277 del parque industrial de Salta, capital,
+            en un local propio que cuenta con cámara una frigorífica de xx m2,
+            un depósito para productos a conservar sin el uso de frio de xxx m2,
+            oficinas, un salón de uso múltiples de xx m2, una playa de maniobras
+            y una amplia zona pesquisada.
           </p>
-
-          <h3 class="txt-Empresa">Compromiso y calidad</h3>
-          <p class="txt-reseña">
-            La calidad es nuestra prioridad número uno. Realizamos rigurosos
-            controles de calidad en todos nuestros productos y mantenemos las
-            más altas normas de higiene y seguridad alimentaria en nuestras
-            instalaciones de almacenamiento y distribución.
-          </p>
-          <h3 class="txt-Empresa">Sostenibilidad</h3>
-          <p class="txt-reseña">
-            Somos conscientes de la importancia de la sostenibilidad en la
-            industria de alimentos. Estamos comprometidos con prácticas
-            sostenibles en nuestra cadena de suministro y trabajamos para
-            reducir nuestro impacto ambiental al máximo.
+        </div>
+        <div class="galeria" id="parte-2">
+          <img
+            src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0017.jpg"
+            alt=""
+          />
+          <img
+            src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0015.jpg"
+            alt=""
+          />
+          <img
+            src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0023.jpg"
+            alt=""
+          />
+          <img
+            src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0026.jpg"
+            alt=""
+          />
+        </div>
+        <div class="caracteristica" id="parte-3">
+          <div class="cuadrado">
+            <img
+              src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0028.jpg"
+              alt=""
+            />
+            <img
+              src="https://img.freepik.com/fotos-premium/mesa-quesos-fiambres-tomates-cherry-aceitunas-vista-pajaro_252214-837.jpg"
+              alt=""
+            />
+            <img
+              src="https://cdn.colombia.com/sdi/2019/03/21/importancia-sobre-el-consumo-de-lacteos-y-derivados-721269.jpg"
+              alt=""
+            />
+          </div>
+          <div class="texto_cuadrado">
+            <p>
+              Trabaja de manera conjunta con su socia EDULUC y Cía. SRL,
+              dedicada, también a la distribución de productos comestibles
+              complementarios (fiambres, quesos, aderezos, duces de batata y
+              membrillo, pastas semifrescas, aceitunas, ajíes, productos de
+              panadería, etc.)<br />
+              Moreno-Moreno realiza la entrega, por cuenta y orden de Danone y
+              Mastellone de los productos de esas marcas en todas las bocas de
+              las cadenas nacionales de mercados minoristas y en las bocas de
+              mercados regionales dentro de la provincia de Salta.
+            </p>
+          </div>
+        </div>
+        <div class="flotas" id="parte-4">
+          <div class="text-flota">
+            <p>
+              Poseemos 35 camiones propios, entre los que se destacan 6
+              transportes semirremolques, todos equipados con equipos de frío,
+              lo que nos permite proporcionar logística con eficiencia, y
+              cumpliendo con altísimos estándares de calidad que nos
+              distingue.<br />
+              Trabajando mancomunadamente Moreno y EDULUC realizan venta y
+              distribución de mercaderías, en camiones propios, tanto en la
+              capital salteña como en el interior de la provincia y localidades
+              cercanas a los límites provinciales, atendiendo, aproximadamente,
+              3500 clientes a los que se los visita con una atención
+              personalizada de manera regular (en algunos casos dos visitas a la
+              semana, en otros una visita semanal y, en los menos con preventa y
+              entrega quincenal.
+            </p>
+          </div>
+          <div class="camiones">
+            <img
+              src="./assents/fotos/drive-download-20231212T185845Z-001/IMG-20231212-WA0014.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="final" id="parte-5">
+          <p>
+            Conjuntamente tienen, aproximadamente, una dotación de 150
+            empleados, los que se distribuyen en diferente tareas: preventa,
+            entrega y cobranza, depósitos, administración y servicios
+            complementarios.
           </p>
         </div>
       </section>
-      <section id="distribuidora">
-        <div class="distribuidora-container">
-          <div class="ubicacion">
-            <div class="left">
-              <h2 class="marcas-tit-dis">
-                Zona de Distribucion de nuestros productos
-              </h2>
-              <p class="marcas-p-dis">
-                Interiorízate sobre cuáles son los pasos a seguir para
-                convertirte en nuestro distribuidor. Podés acercarte a nuestro
-                punto de distribucion.
-              </p>
-            </div>
-            <div class="right">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14483.013448034877!2d-65.3724183!3d-24.8381068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4acd26cb863%3A0x70db42681991b153!2sLA%20SERENISIMA%20-%20Moreno-Moreno%20y%20C%C3%ADa%20SRL!5e0!3m2!1ses!2sar!4v1692866921521!5m2!1ses!2sar"
-                width="350"
-                height="250"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
 
-          <div class="Preventista-list">
-            <h3>Preventista disponibles</h3>
-            <ul class="prev-lista">
-              <li><a href="#info1">Zona de Salta Capital</a></li>
-              <li><a href="#info2">Zona del Interior</a></li>
-            </ul>
+      <section id="Servicios">
+        <div class="distribucion">
+          <h4>Zona de Distribución</h4>
+          <p>
+            Nuestra empresa realiza la distribución de productos en una amplia
+            zona geográfica. Contamos con una cobertura que incluye diversas
+            localidades y regiones para llegar a nuestros clientes de manera
+            eficiente.
+          </p>
+          <div id="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.7535050527804!2d-65.3749932254834!3d-24.838101909734284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4acd26cb863%3A0x70db42681991b153!2sLA%20SERENISIMA%20-%20Moreno-Moreno%20y%20C%C3%ADa%20SRL!5e0!3m2!1ses!2sar!4v1702498958187!5m2!1ses!2sar"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
+        </div>
+        <!-- Preventistas Disponibles -->
+        <div class="preventistas">
+          <h4>Preventistas Disponibles</h4>
+          <p>
+            Contamos con un equipo de preventistas dedicados a atender las
+            necesidades de nuestros clientes. Nuestros preventistas están
+            disponibles para ofrecer asesoramiento, realizar preventas y
+            asegurar la satisfacción de nuestros clientes en cada visita.
+          </p>
+          <!-- Puedes agregar más detalles sobre los preventistas según sea necesario -->
 
+          <ul class="prev-lista">
+            <li><a href="#info1">Zona de Salta Capital</a></li>
+            <li><a href="#info2">Zona del Interior</a></li>
+          </ul>
           <div id="info1" class="modal">
             <div class="modal-content">
-              <h2>Preventista de Capital</h2>
+              <h3>Preventistas disponibles en Capital</h3>
               <ul class="prev-list-mod">
                 <li><a href="#info3">Zona 1</a></li>
                 <li><a href="#info4">Zona 3</a></li>
@@ -127,92 +254,164 @@
           <!--modal preventista salta-->
           <div id="info3" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 01 de Capital</h2>
+              <h5>Punto de venta en zona 01 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Cardoso, Raul Fernando<br />
                 CONTACTO: +54 9 387 570-2567
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info4" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 03 de Capital</h2>
+              <h5>Punto de venta en zona 03 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Merlo, Julio<br />
                 CONTACTO: +54 9 387 613-7031
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info5" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 05 de Capital</h2>
+              <h5>Punto de venta en zona 05 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Guzman, Juan Domingo <br />
                 CONTACTO: +54 9 387 504-6391
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info6" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 06 de Capital</h2>
+              <h5>Punto de venta en zona 06 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc: Chocobar, Gonzalo Saul
                 <br />
                 CONTACTO: +54 9 387 467-2702
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info7" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 15 de Capital</h2>
+              <h5>Punto de venta en zona 15 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Chaila, Marcelo German
                 <br />
                 CONTACTO: +54 9 387 467-2691
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info8" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 16 de Capital</h2>
+              <h5>Punto de venta en zona 16 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Herrera, Raul Antonio <br />
                 CONTACTO: +54 9 387 523-8489
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info9" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 17 de Capital</h2>
+              <h5>Punto de venta en zona 17 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Chavex, Karen Zoe del Milagro
                 <br />
                 CONTACTO: +54 9 387 858-8140
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info02" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 20 de Capital</h2>
+              <h5>Punto de venta en zona 20 de Capital</h5>
               <p>
                 <br />
                 Nombre del preventista Eduluc : Garnica, Jose Ignacio <br />
                 CONTACTO: +54 9 387 515-9591
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.57678224157!2d-65.51303107140916!3d-24.79590639519555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1702163331262!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
@@ -221,14 +420,13 @@
 
           <div id="info2" class="modal">
             <div class="modal-content">
-              <h2>Preventista del Interior</h2>
+              <h3>Preventista del Interior</h3>
               <ul class="prev-list-mod">
                 <li><a href="#info10">Zona 2</a></li>
                 <li><a href="#info11">Zona 4</a></li>
                 <li><a href="#info12">Zona 7</a></li>
                 <li><a href="#info13">Zona 8</a></li>
                 <li><a href="#info14">Zona 9</a></li>
-                <li><a href="#info15">Zona 09</a></li>
                 <li><a href="#info16">Zona 10</a></li>
                 <li><a href="#info17">Zona 11</a></li>
                 <li><a href="#info18">Zona 12</a></li>
@@ -243,15 +441,17 @@
           <!--modal preventista interior-->
           <div id="info10" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 02 del interior</h2>
+              <h5>Punto de venta en zona 02 del interior</h5>
               <p>
-                EL TUNAL- NTRA SRA. DE TAVALERA - CORONEL MOLLINEDO <br />
+                EL TUNAL - LAS LAJITAS - JOAQUIN V. GONZALEZ - QUEBRACHAL - NTRA
+                SRA. DE TAVALERA - TACO POZO - MONTE QUEMADO - CAMPO GALLO -
+                PAMPA DE LOS GUANCOS - SACHAYOJ <br />
                 Nombre del preventista Eduluc : Cabrera Velisan, Cristian
                 Luciano <br />
                 CONTACTO: +54 9 387 643-5570
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d925726.5591366497!2d-64.74566770913697!3d-24.996059440503046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sindicadores%20en%20el%20tunal%20%2C%20nuestra%20se%C3%B1ora%20de%20tavalera%20y%20coronel%20mollinedo%20!5e0!3m2!1ses!2sar!4v1701810174525!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d1839749.016667161!2d-64.8464920301652!3d-25.76198102754164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x9419dee585d80147%3A0x95a5d3942249498f!2sEl%20Tunal%2C%20Salta!3m2!1d-25.2531921!2d-64.39294079999999!4m5!1s0x9410ac2d3a894ddf%3A0x9967fceb78414e35!2sLas%20Lajitas%2C%20Salta!3m2!1d-24.727337799999997!2d-64.1956854!4m5!1s0x94175c8dff86eaa1%3A0xc3848476d0b6a88e!2sJoaquin%20V.%20Gonz%C3%A1lez%2C%20Salta!3m2!1d-25.1172835!2d-64.1247331!4m5!1s0x94176e6dbe7f4d0d%3A0x89d2f0caf1ad2036!2sEl%20Quebrachal%2C%20Salta!3m2!1d-25.335017699999998!2d-64.02030289999999!4m5!1s0x9417a7db12b8d299%3A0xb3ac21d2752ba07e!2sTalavera%2C%20Nuestra%20Se%C3%B1ora%20de%20Talavera%2C%20Salta!3m2!1d-25.4594301!2d-63.7792198!4m5!1s0x9416410e0050fd97%3A0xba3579b0e31012f7!2sTaco%20Pozo%2C%20Chaco!3m2!1d-25.615879399999997!2d-63.2679565!4m5!1s0x9415fd7e8b78916f%3A0x4fc98f68306ed3d3!2sMonte%20Quemado%2C%20Santiago%20del%20Estero!3m2!1d-25.8078026!2d-62.825339!4m5!1s0x943dd5be1fe55e4b%3A0xe37f9ae1e7ce3c49!2sCampo%20Gallo%2C%20Santiago%20del%20Estero!3m2!1d-26.5834765!2d-62.845239199999995!4m5!1s0x943fbb1cf83ef7b7%3A0x85dc399e8ecc7307!2sPampa%20de%20los%20Guanacos%2C%20Santiago%20del%20Estero!3m2!1d-26.2295201!2d-61.837421199999994!4m5!1s0x943f11464961b59f%3A0xb5ff43030fd722ab!2sSachayoj%2C%20Santiago%20del%20Estero!3m2!1d-26.6747712!2d-61.8145138!5e0!3m2!1ses!2sar!4v1702151203597!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -264,30 +464,40 @@
           </div>
           <div id="info11" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 04 del interior</h2>
+              <h5>Punto de venta en zona 04 del interior</h5>
               <p>
-                GUACHIPAS - ROSARIO DEL LERMA - CAMPO QUIJANO - EL ENCON -
-                CERRILLOS<br />
+                SAN LUIS - EL ENCON - CAMPO QUIJANO - CARRILLOS - LA MERCED -
+                SAN AGUSTIN - CARRIL - GUACHIPA - LA VIÑA - MOLDE - CHICOANA
+                <br />
                 Nombre del preventista Eduluc : Romero, Julio Javier
                 <br />
                 CONTACTO: +54 9 387 467-2654
               </p>
-              <div id="mapa"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d1004409.7618358985!2d-66.1812635326608!3d-24.881809658206702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x941bc3aeb1abde25%3A0xb46ab2258cc59476!2sSan%20Luis%2C%20Salta!3m2!1d-24.7966463!2d-65.4213307!4m5!1s0x941be91e2ca3edd3%3A0xa7539e11b91559c3!2sEl%20encon%2C%20El%20Enc%C3%B3n%2C%20Salta!3m2!1d-24.8500004!2d-65.5500107!4m5!1s0x941be516be38b5f7%3A0x9bf5db3fab2ab4b1!2sCampo%20Quijano%2C%20Salta!3m2!1d-24.907204!2d-65.6441178!4m5!1s0x941be7869809ff91%3A0xfc43aee62599c8f0!2sCerrillos%2C%20Salta!3m2!1d-24.8958166!2d-65.4871162!4m5!1s0x941be0a249abd629%3A0x68e42254a898934d!2sLa%20Merced%2C%20Salta!3m2!1d-24.9666639!2d-65.4895317!4m5!1s0x941bdfa55645c985%3A0xd80f8b8e7a62faaf!2sSan%20Agustin%2C%20Salta!3m2!1d-24.9957149!2d-65.4385078!4m5!1s0x94195fcf3b33d45b%3A0x25b42d708fdd910!2sEl%20Carril%2C%20Salta!3m2!1d-25.0767821!2d-65.4887332!4m5!1s0x94193c4f39edab0d%3A0x538752902440c014!2sGuachipas%2C%20Salta!3m2!1d-25.522195999999997!2d-65.5089077!4m5!1s0x9419393a7d2091af%3A0x346d219884b9bce4!2zTGEgVmnDsWEsIFNhbHRh!3m2!1d-25.4665349!2d-65.5667354!4m5!1s0x94195eee30a63927%3A0x7a4814720eac7797!2sChicoana%2C%20Salta!3m2!1d-25.1029019!2d-65.5334079!5e0!3m2!1ses!2sar!4v1702151805632!5m2!1ses!2sar"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
 
               <button id="close3" class="close-button">Cerrar</button>
             </div>
           </div>
           <div id="info12" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 07 del interior</h2>
+              <h5>Punto de venta en zona 07 del interior</h5>
               <p>
-                Gral. BALLIVIAN - SALVADOR MAZZA<br />
+                EMBARCACION - Gral. BALLIVIAN - Gral. CORNEJO - Gral. MOSCONI-
+                YACUY - AGUARAY - SALVADOR MAZZA<br />
                 Nombre del preventista Eduluc : Cabrera, Cristian Gustavo
                 <br />
                 CONTACTO: +54 9 387 350-2474
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1760596.7961689879!2d-65.1344962645033!3d-23.277901049343694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smarcar%20con%20indicador%20en%20%20Gral.%20BALLIVIAN%20-%20SALVADOR%20MAZZA!5e0!3m2!1ses!2sar!4v1701812297740!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d1685822.0571826599!2d-64.86292776864727!3d-22.360974749947612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x940fe59cff882467%3A0x51fe10a4fb7c2394!2sEmbarcacion%2C%20Salta!3m2!1d-23.210321999999998!2d-64.0973059!4m5!1s0x940fbf47f05668c9%3A0x55b12ce67a7b888c!2sGral.%20Ballivian%2C%20Salta!3m2!1d-22.9341714!2d-63.8588769!4m5!1s0x940f09cad537d71d%3A0x437dc1eca30af956!2sGral.%20Enrique%20Mosconi%2C%20Salta!3m2!1d-22.5960958!2d-63.811585699999995!4m5!1s0x940f10ee1b8294df%3A0x22798bac79eb990!2sYacuy%2C%20Salta!3m2!1d-22.3683545!2d-63.7679038!4m5!1s0x940f228ff3f0d2ef%3A0x7837bdbdd4aaa491!2sAguaray%2C%20Salta!3m2!1d-22.2432406!2d-63.7346423!4m5!1s0x940f2f39fbf87af7%3A0x4e62bdd1334d80c2!2sSalvador%20Mazza%2C%20Salta!3m2!1d-22.0554561!2d-63.688582399999994!5e0!3m2!1ses!2sar!4v1702152219898!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -300,14 +510,14 @@
           </div>
           <div id="info13" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 08 del interior</h2>
+              <h5>Punto de venta en zona 08 del interior</h5>
               <p>
-                SANTA VICTORIA ESTE<br />
+                TARTAGAL - SANTA VICTORIA ESTE<br />
                 Nombre del preventista Eduluc : Basterra, Pablo Rufino <br />
                 CONTACTO: +54 9 387 569-8295
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1357541.3759970742!2d-63.1400002349342!3d-22.31873937920616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMARCAR%20indicadores%20en%20SANTA%20VICTORIA%20ESTE!5e0!3m2!1ses!2sar!4v1701817472690!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1685822.0571826599!2d-64.86292776864727!3d-22.360974749947612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x940f08e0b3e55303%3A0xa8ff05ac1bb1398e!2sTartagal%2C%20Salta!3m2!1d-22.5167622!2d-63.8056084!4m5!1s0x940c2dfe9c8873c7%3A0x65e789877f7b8d8e!2sSanta%20Victoria%20Este%2C%20Salta!3m2!1d-22.2725026!2d-62.712510599999995!5e0!3m2!1ses!2sar!4v1702152855631!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -320,35 +530,16 @@
           </div>
           <div id="info14" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 09 del interior</h2>
+              <h5>Punto de venta en zona 09 del interior</h5>
               <p>
-                DRAGONES - CORONEL SAN JUAN SOLA - INGENIERO JUAREZ<br />
+                PLUMA DEL PATO - HICKMAN - CORONEL SAN JUAN SOLA - JUAN PAGE -
+                INGENIERO JUAREZ - LUIS BURELA - APOLINARIO SARAVIA - CORONEL
+                MOLLINEDO<br />
                 Nombre del preventista Eduluc : Cermak, Alejandro Ariel<br />
                 CONTACTO: +54 9 387 523-6987
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d936139.6570338848!2d-63.24919026614224!3d-23.575785801671184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smarcar%20con%20indicadores%20en%20DRAGONES%2C%20CORONEL%20JUAN%20SOLA%20y%20INGENIERO%20JUAREZ%20!5e0!3m2!1ses!2sar!4v1701812974577!5m2!1ses!2sar"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <button id="close3" class="close-button">Cerrar</button>
-            </div>
-          </div>
-          <div id="info15" class="modal">
-            <div class="modal-content">
-              <h2>Punto de venta en zona 09 del interior</h2>
-              <p>
-                CORONEL MOLLINEDO - AP SARAVIA - GRAL PIZARRO<br />
-                Nombre del preventista Eduluc : Sanchez, Miguel Eduardo
-                <br />
-                CONTACTO: +54 9 387 467-2610
-              </p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d232570.75309622588!2d-64.20875684660233!3d-24.384155226727014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smarcar%20con%20indicadores%20en%20CORONEL%20MOLLINEDO%20-%20APolinario%20SARAVIA%20-%20GRAL%20PIZARRO!5e0!3m2!1ses!2sar!4v1701813130723!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d721217.3252536918!2d-64.18947992851773!3d-23.692833566053935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x9411ef518156793b%3A0xc30c825471a2af8e!2sPluma%20del%20Pato%2C%20Salta!3m2!1d-23.3716392!2d-63.096098399999995!4m5!1s0x9411f4f089042e47%3A0x7d9b805ccd80f37a!2sCoronel%20Juan%20Sol%C3%A1%2C%20Salta!3m2!1d-23.4687639!2d-62.887587399999994!4m5!1s0x940e2b39bac38fe7%3A0x1f0eb83e5d8b0f05!2sHickmann%2C%20Salta!3m2!1d-23.212021099999998!2d-63.567145999999994!4m5!1s0x94124bdcd1575131%3A0xeebf613feb9cd4f1!2sCapit%C3%A1n%20Juan%20Page%2C%20Salta!3m2!1d-23.6884983!2d-62.376103699999994!4m5!1s0x9413111e64673773%3A0x2897f645adee20c5!2sIngeniero%20Ju%C3%A1rez%20Formosa%2C%20Salta%2C%20Ingeniero%20Ju%C3%A1rez%2C%20Formosa!3m2!1d-23.8907435!2d-61.867642!4m5!1s0x94109439d80b2149%3A0x48c1a637c3223d44!2sLuis%20Burela%2C%20Salta!3m2!1d-24.387470099999998!2d-63.9886639!4m5!1s0x9410bfcf5082b45d%3A0x8f283ab2cb6a04bc!2sApolinario%20Saravia%2C%20Salta!3m2!1d-24.4355662!2d-63.993139799999994!4m5!1s0x9410bb9ed70bede7%3A0xc74f212c67d6e6a!2sCoronel%20Mollinedo%2C%20Salta!3m2!1d-24.5416579!2d-64.0999489!5e0!3m2!1ses!2sar!4v1702153337214!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -361,7 +552,7 @@
           </div>
           <div id="info16" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 10 del interior</h2>
+              <h5>Punto de venta en zona 10 del interior</h5>
               <p>
                 SAN RAMON DE LA NUEVA ORAN - AGUAS BLANCAS<br />
                 Nombre del preventista Eduluc : Gutierrez, Juan David
@@ -369,8 +560,8 @@
                 CONTACTO: +54 9 387 858-8148
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d470338.4364681478!2d-64.67730180702564!3d-22.931104419831563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x940ff5e664998a97%3A0xf8b5c418763ee8fe!2sSan%20Ramon%20de%20la%20Nueva%20Oran%2C%20Salta!3m2!1d-23.128383!2d-64.3216987!4m5!1s0x94057fc22ef0a29f%3A0xbe452baca8d54f1e!2sAguas%20Blancas%2C%20Salta!3m2!1d-22.7344994!2d-64.353448!5e0!3m2!1ses!2sar!4v1701826772014!5m2!1ses!2sar"
-                width="900"
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1103639.380923099!2d-64.82001065846589!3d-22.916849555014448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x940ff5e664998a97%3A0xf8b5c418763ee8fe!2sSan%20Ramon%20de%20la%20Nueva%20Oran%2C%20Salta!3m2!1d-23.128383!2d-64.3216987!4m5!1s0x94057fc22ef0a29f%3A0xbe452baca8d54f1e!2sAguas%20Blancas%2C%20Salta!3m2!1d-22.7344994!2d-64.353448!5e0!3m2!1ses!2sar!4v1702153595133!5m2!1ses!2sar"
+                width="100%"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -383,16 +574,17 @@
 
           <div id="info17" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 11 del interior</h2>
+              <h5>Punto de venta en zona 11 del interior</h5>
               <p>
-                METAN - LUMBRERA - EL GALPON<br />
+                METAN - ROSARIO DE LA FRONTERA - EL GALPON - RIO PIEDRAS -
+                LUMBRERA<br />
                 Nombre del preventista Eduluc : Arru, Alvaro
                 <br />
                 CONTACTO: +54 9 387 520-0466
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d230756.24780588137!2d-64.98177261446942!3d-25.352328028509024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x9419af0c2c6330e3%3A0x222666cf41c8c9fb!2zTWV0w6FuLCBTYWx0YQ!3m2!1d-25.494224499999998!2d-64.97212979999999!4m5!1s0x941999e2faea90d9%3A0xd1b37fb043e9e02b!2sLumbrera%2C%20Salta!3m2!1d-25.2118204!2d-64.9270798!4m5!1s0x9419c65b5f3bb7b7%3A0x50fbab0823a6b8d9!2sEl%20Galp%C3%B3n%2C%20Salta!3m2!1d-25.382172!2d-64.6541297!5e0!3m2!1ses!2sar!4v1701826946840!5m2!1ses!2sar"
-                width="900"
+                src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1672565.518405532!2d-65.17501590047185!3d-23.431935047306386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x9419af0c2c6330e3%3A0x222666cf41c8c9fb!2zTWV0w6FuLCBTYWx0YQ!3m2!1d-25.494224499999998!2d-64.97212979999999!4m5!1s0x941850ebef9022f7%3A0x2d9e68da955663ac!2sRosario%20de%20la%20Frontera%2C%20Salta!3m2!1d-25.7986507!2d-64.9676514!4m5!1s0x940f0fbe430d5749%3A0x3ec10dad176baa1a!2sGalpon%2C%20Ruta%20Nacional%2086%2C%20Tartagal%2C%20Salta!3m2!1d-22.5194746!2d-63.806662599999996!4m5!1s0x9419bd4e6c614bf1%3A0x762b0a715e18b6c8!2sR%C3%ADo%20Piedras%2C%20Salta!3m2!1d-25.3149612!2d-64.9101505!4m5!1s0x941999e2faea90d9%3A0xd1b37fb043e9e02b!2sLumbrera%2C%20Salta!3m2!1d-25.2118204!2d-64.9270798!5e0!3m2!1ses!2sar!4v1702153908867!5m2!1ses!2sar"
+                width="100%"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -405,15 +597,16 @@
 
           <div id="info18" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 12 del interior</h2>
+              <h5>Punto de venta en zona 12 del interior</h5>
               <p>
-                CAIMANCITO - PICHANAL - HIPOLITO YRIGOYEN - EMBARCACION<br />
+                URUNDEL - YUTO - CAIMANCITO - COLONIA SANTA ROSA - PICHANAL -
+                HIPOLITO YRIGOYEN <br />
                 Nombre del preventista Eduluc : Flores, Walter Javier
                 <br />
                 CONTACTO: +54 9 387 569-8304
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d616857.8009969111!2d-64.67952929789969!3d-23.4661459724419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20indicadores%20en%20CAIMANCITO%20-%20PICHANAL%20-%20Hip%C3%B3lito%20Yrigoyen%20-%20EMBARCACION!5e0!3m2!1ses!2sar!4v1701814267182!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d891595.7365057878!2d-64.93075874757605!3d-23.393619259798133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x941aa93b1bed37f1%3A0xe25e77f88183afc8!2sUrundel%2C%20Salta!3m2!1d-23.5577752!2d-64.3972179!4m5!1s0x941aa5a3c0ad0803%3A0x2fc760adc73b887f!2sYuto%2C%20Jujuy!3m2!1d-23.6427652!2d-64.47189949999999!4m5!1s0x941abc6d8593e3fd%3A0x659ea99255c5f330!2sCaimancito%2C%20Jujuy!3m2!1d-23.7399249!2d-64.5915976!4m5!1s0x94055222d6284f73%3A0x8266519d97139822!2sColonia%20Santa%20Rosa%2C%20Salta!3m2!1d-23.3942229!2d-64.4257446!4m5!1s0x940ffc7291f3b533%3A0x10e4141746dce72c!2sPichanal%2C%20Salta!3m2!1d-23.3237056!2d-64.224542!4m5!1s0x940ff9c6912257b9%3A0x3e08b78ffe5003f4!2sHip%C3%B3lito%20Yrigoyen%2C%20Salta!3m2!1d-23.2443696!2d-64.27663679999999!5e0!3m2!1ses!2sar!4v1702154189685!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -427,15 +620,16 @@
 
           <div id="info19" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 14 del interior</h2>
+              <h5>Punto de venta en zona 14 del interior</h5>
               <p>
-                SANTA MARIA - CAFAYATE - SAN CARLOS<br />
+                ANIMANA - SAN CARLOS - CAFAYATE - TOLOMBON - CALALAO DEL VALLE -
+                AMAICHA DEL VALLE - SANTA MARIA DE CATAMARCA<br />
                 Nombre del preventista Eduluc : Lopez, Franco Gustavo
                 <br />
                 CONTACTO: +54 9 387 684-9150
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d916883.8505367915!2d-66.56387089018857!3d-26.145314040904527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMARCAR%20indicadores%20en%20Santa%20Maria%20(CATAMARCA)%20%20-%20CAFAYATE%20(SALTA)-%20SAN%20CARLOS(SALTA)!5e0!3m2!1ses!2sar!4v1701815416999!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d871810.4130495155!2d-66.66870375121256!3d-26.177451363922955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x941f2e6252dac629%3A0x625242a92718c844!2sAnimana%2C%20Salta!3m2!1d-25.969708699999998!2d-65.9474639!4m5!1s0x941f2c1c0e15c283%3A0xbd0b92852a82b720!2sSan%20Carlos%2C%20Salta!3m2!1d-25.891922599999997!2d-65.928325!4m5!1s0x941f311369c3a61b%3A0x540e61c61f3a5d0c!2sCafayate%2C%20Salta!3m2!1d-26.0730798!2d-65.976052!4m5!1s0x941f4a04e6a44971%3A0xeb3194f39f62ed0b!2sTolomb%C3%B3n%2C%20Salta!3m2!1d-26.182786999999998!2d-65.940319!4m5!1s0x941f4e036dd1d36f%3A0xf7e85da9fa34dc8b!2sColalao%20del%20Valle%2C%20Tucum%C3%A1n!3m2!1d-26.362009699999998!2d-65.9570031!4m5!1s0x9421fef0310d54d7%3A0xfbdeb478b776ca9c!2sAmaicha%20del%20Valle%2C%20Tucum%C3%A1n!3m2!1d-26.5938655!2d-65.9228956!4m5!1s0x9421e52d634a02cf%3A0xe1d0e1a47fbdaf76!2sSanta%20Mar%C3%ADa%2C%20Catamarca!3m2!1d-26.7035442!2d-66.0459116!5e0!3m2!1ses!2sar!4v1702154500736!5m2!1ses!2sar"
                 width="100%"
                 height="300"
                 style="border: 0"
@@ -448,15 +642,15 @@
           </div>
           <div id="info20" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 19 del interior</h2>
+              <h5>Punto de venta en zona 19 del interior</h5>
               <p>
-                VAQUEROS - LA CALDERA - EL BORDO - GRAL GUEMES<br />
+                GRAL GUEMES - CAMPO SANTOS - EL BORDO - VAQUEROS - LA CALDERA<br />
                 Nombre del preventista Eduluc : Posada, Gustavo Domingo<br />
                 CONTACTO: +54 9 387 483-9736
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d232072.40880852725!2d-65.39490984650615!3d-24.653605466184242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x941bc103322e027d%3A0x81b27f4bbc79afcd!2sVaqueros!3m2!1d-24.69454!2d-65.40979!4m5!1s0x941bbecb095153ef%3A0xc2547f98bbf0117b!2sLa%20Caldera%2C%20Salta!3m2!1d-24.6026104!2d-65.38073109999999!4m5!1s0x941a331774ba6d7d%3A0xcdeeb361bec20cb6!2sEl%20Bordo%2C%20Salta!3m2!1d-24.6625955!2d-65.10590719999999!4m5!1s0x941a34f5bf1de0c5%3A0xf2ad6eedd9d6b270!2sGral.%20Guemes%2C%20Salta!3m2!1d-24.667257799999998!2d-65.0500647!5e0!3m2!1ses!2sar!4v1701826487805!5m2!1ses!2sar"
-                width="900"
+                src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d309106.7234802422!2d-65.45339114261395!3d-24.720835898115816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x941a34f5bf1de0c5%3A0xf2ad6eedd9d6b270!2sGeneral%20Guemes%2C%20Salta!3m2!1d-24.667257799999998!2d-65.0500647!4m5!1s0x941bcb37023a8c83%3A0x6b5fc3caa378c30f!2sCampo%20Santo%2C%20Salta!3m2!1d-24.6785216!2d-65.1046597!4m5!1s0x941a331774ba6d7d%3A0xcdeeb361bec20cb6!2sEl%20Bordo%2C%20Salta!3m2!1d-24.6625955!2d-65.10590719999999!4m5!1s0x941bc103322e027d%3A0x81b27f4bbc79afcd!2sVaqueros%2C%20Salta!3m2!1d-24.69454!2d-65.40979!4m5!1s0x941bbecb095153ef%3A0xc2547f98bbf0117b!2sLa%20Caldera%2C%20Salta!3m2!1d-24.6026104!2d-65.38073109999999!5e0!3m2!1ses!2sar!4v1702155083175!5m2!1ses!2sar"
+                width="100%"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -469,17 +663,18 @@
 
           <div id="info21" class="modal">
             <div class="modal-content">
-              <h2>Punto de venta en zona 22 del interior</h2>
+              <h5>Punto de venta en zona 22 del interior</h5>
               <p>
-                SAN PEDRO DE COLALAO - ROSARIO DE LA FRONTERA - NUEVA ESP - EL
-                MOJON<br />
+                ROSARIO DE LA FRONTERA - CANDELARIA - EL TALA - EL JARDIN -
+                TRANCAS - SAN PEDRO DE CALALAO - 7 DE ABRIL - POTRERO - EL MOJON
+                - NUEVA ESPERANZA - QUEBRACHO COTO<br />
                 Nombre del preventista Eduluc : Sanconte, Sergio Luis
                 <br />
                 CONTACTO: +54 9 387 467-2694
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d743739.3439600051!2d-65.33699771648145!3d-26.08609027676112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x9418bd0b05eb5ceb%3A0x7a3791f81a04295c!2sSan%20Pedro%20de%20Colalao%2C%20Tucum%C3%A1n!3m2!1d-26.240396699999998!2d-65.4997154!4m5!1s0x941850ebef9022f7%3A0x2d9e68da955663ac!2sRosario%20de%20la%20Frontera%2C%20Salta!3m2!1d-25.7986507!2d-64.9676514!4m5!1s0x9417fde0b5416297%3A0x14b3cecbadd20a80!2sNueva%20Esperanza%2C%20Santiago%20del%20Estero!3m2!1d-26.2025489!2d-64.2391857!4m5!1s0x9417f86121a9eb05%3A0xd2a08650a19732dc!2sEl%20Moj%C3%B3n%2C%20Santiago%20del%20Estero!3m2!1d-26.0954949!2d-64.30921099999999!5e0!3m2!1ses!2sar!4v1701827236754!5m2!1ses!2sar"
-                width="900"
+                src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d744647.0991008902!2d-65.47311041732075!3d-25.942889644200516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x941850ebef9022f7%3A0x2d9e68da955663ac!2sRosario%20de%20la%20Frontera%2C%20Salta!3m2!1d-25.7986507!2d-64.9676514!4m5!1s0x941bc254bd26ac61%3A0xec27b9f36618ef9d!2sLa%20Candelaria%2C%20Salta!3m2!1d-24.7987137!2d-65.4296951!4m5!1s0x94188d87b028dbc7%3A0xee8dcea62aef8905!2sEl%20Tala%2C%20Salta!3m2!1d-26.112057699999998!2d-65.27687329999999!4m5!1s0x941894aae3fbf929%3A0x6a38ca05a43d6e60!2sEl%20Jard%C3%ADn%2C%20Salta!3m2!1d-26.0795456!2d-65.39348559999999!4m5!1s0x94188fdfb7afd6b7%3A0x4622466408f4af0a!2sTrancas%2C%20Tucum%C3%A1n!3m2!1d-26.2318663!2d-65.2809366!4m5!1s0x9418bd0b05eb5ceb%3A0x7a3791f81a04295c!2sSan%20Pedro%20de%20Colalao%2C%20Tucum%C3%A1n!3m2!1d-26.240396699999998!2d-65.4997154!4m5!1s0x9422a833915595fb%3A0x1e06b78380cf6a1e!2s7%20de%20Abril%2C%20Tucum%C3%A1n!3m2!1d-26.2915454!2d-64.5001647!4m5!1s0x9417f86121a9eb05%3A0xd2a08650a19732dc!2sEl%20Moj%C3%B3n%2C%20Santiago%20del%20Estero!3m2!1d-26.0954949!2d-64.30921099999999!4m5!1s0x9422a9ccddb42bc9%3A0x8c58c363019407f3!2sQuebracho%20Coto%2C%20Santiago%20del%20Estero!3m2!1d-26.284372899999997!2d-64.4624724!5e0!3m2!1ses!2sar!4v1702155903325!5m2!1ses!2sar"
+                width="100%"
                 height="300"
                 style="border: 0"
                 allowfullscreen=""
@@ -492,109 +687,125 @@
 
           <!---fin de modal interior-->
         </div>
-      </section>
-      <div class="marcas">
-        <h2 class="marcas-tit">Marcas de productos de distribucion</h2>
-        <p class="marcas-p">
-          Ofrecemos una gama diversificada de productos lácteos, que incluye
-          leche, queso, yogur, mantequilla y más. Colaboramos con productores de
-          renombre para garantizar que nuestros clientes tengan acceso a
-          productos lácteos frescos y deliciosos.
-        </p>
-      </div>
-      <section class="customer-logos slider">
-        <div class="slide">
-          <a
-            href="https://www.cooparroyocabral.com.ar/unidades-negocio/oferta-lacteos"
-            ><img src="./assents/img/arroyo-cabral-removebg-preview.png"
-          /></a>
+        <!-- Marcas de Productos -->
+        <div class="marcas-productos">
+          <h4>Marcas de Productos</h4>
+          <p>
+            Ofrecemos una variedad de marcas reconocidas en el mercado.
+            Trabajamos con marcas de calidad para garantizar la satisfacción de
+            nuestros clientes.
+          </p>
         </div>
-        <div class="slide">
-          <a href="http://campoaustral.com.ar/"
-            ><img src="./assents/img/campoaustral-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://www.saboresdecanuelas.com.ar/"
-            ><img src="./assents/img/saboresdecanuelas.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://www.calsa.com.ar/"
-            ><img src="./assents/img/calsa.png"
-          /></a>
-        </div>
+        <!-- Slider de Publicidad -->
+        <div class="customer-logos slider">
+          <div class="slide">
+            <a
+              href="https://www.cooparroyocabral.com.ar/unidades-negocio/oferta-lacteos"
+              ><img src="./assents/img/arroyo-cabral-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="http://campoaustral.com.ar/"
+              ><img src="./assents/img/campoaustral-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.saboresdecanuelas.com.ar/"
+              ><img src="./assents/img/saboresdecanuelas.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.calsa.com.ar/"
+              ><img src="./assents/img/calsa.png"
+            /></a>
+          </div>
 
-        <div class="slide">
-          <a href="http://www.lafrancisca.com/productos">
-            <img src="./assents/img/lafransisca-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="http://www.lapiamontesa.com/"
-            ><img src="./assents/img/piamontesa-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="http://www.dulcesblason.com.ar/"></a>
-          <img src="./assents/img/blason.png" />
-        </div>
-        <div class="slide">
-          <a href="https://www.agd.com.ar/"
-            ><img src="./assents/img/agd.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://www.tonadita.com/">
-            <img src="./assents/img/tonadita-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://www.villadagri.net/">
-            <img src="./assents/img/villadiagri-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://www.paladini.com.ar/es/home/?">
-            <img src="./assents/img/paladini-removebg-preview.png"
-          /></a>
-        </div>
-        <div class="slide">
-          <a href="https://quesoazulemperador.com/"
-            ><img src="./assents/img/savaz-removebg-preview.png"
-          /></a>
-        </div>
-      </section>
-
-      <section class="contact-area" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="contact-content text-center">
-              <h3>CONTACTANOS</h3>
-              <p>
-                Moreno - Moreno &Cia S.R.L <br />
-                Av. Rodriguez Durañona Nº 2277 <br />
-                A4406 LXJ, Salta. Tel. 387 - 4962305
-                <br />
-                Tel. 387- 4962306 morenomoreno@gmail.com
-              </p>
-            </div>
+          <div class="slide">
+            <a href="http://www.lafrancisca.com/productos">
+              <img src="./assents/img/lafransisca-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="http://www.lapiamontesa.com/"
+              ><img src="./assents/img/piamontesa-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="http://www.dulcesblason.com.ar/"></a>
+            <img src="./assents/img/blason.png" />
+          </div>
+          <div class="slide">
+            <a href="https://www.agd.com.ar/"
+              ><img src="./assents/img/agd.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.tonadita.com/">
+              <img src="./assents/img/tonadita-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.villadagri.net/">
+              <img src="./assents/img/villadiagri-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://www.paladini.com.ar/es/home/?">
+              <img src="./assents/img/paladini-removebg-preview.png"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href="https://quesoazulemperador.com/"
+              ><img src="./assents/img/savaz-removebg-preview.png"
+            /></a>
           </div>
         </div>
       </section>
-
-      <footer>
-        <p>
-          Copyright &copy; 2023 SaltaCoders | Todos los derechos reservados.
-        </p>
-      </footer>
-
-      <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-      <script src="./js/zona4.js"></script>
-
-      <script src="./js/nav-bar.js"></script>
-      <script src="./js/proventistas.js"></script>
-      <script src="./js/carrusel.js"></script>
+      <section id="Contacto">
+        <div class="contacto-area">
+          <h2>Contacto</h2>
+          <p>
+            Moreno - Moreno &amp; Cia S.R.L <br />
+            Av. Rodriguez Durañona Nº 2277 <br />
+            A4406 LXJ, Salta. <br />Tel. 387 - 4962305 <br />
+            Tel. 387- 4962306 <br />
+            Correo electrónico:
+            <a href="mailto:morenomoreno@gmail.com">morenomoreno@gmail.com</a>
+          </p>
+        </div>
+      </section>
+      <section id="Footer">
+        <footer>
+          <p>
+            Copyright &copy; 2023
+            <a href="https://saltacoders.com/">SaltaCoders</a> | Todos los
+            derechos reservados.
+          </p>
+        </footer>
+      </section>
     </main>
+
+    <!-- Agrega los enlaces a los scripts de Bootstrap y jQuery (necesarios para el funcionamiento del navbar) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script src="./js/nav-bar.js"></script>
+    <script src="./js/carruselpru.js"></script>
+    <script src="./js/proventistas.js"></script>
+    <script src="./js/carrusel.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
   </body>
 </html>
