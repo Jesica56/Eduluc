@@ -79,7 +79,6 @@ body {
     border-radius: 64%;
     background-color: #472794; 
 }
-/* Home section */
 
 .navTrigger {
   display: none;
@@ -105,9 +104,7 @@ body {
   .navTrigger {
       display: block;
   }
-  .nav div.logo {
-      margin-left: 15px;
-  }
+  
   .nav div.main_list {
       width: 100%;
       height: 0;
@@ -124,18 +121,22 @@ body {
       right: 0;
       left: 0;
       bottom: 0;
-      background-color: #111;
+      background: linear-gradient(90deg, rgb(8 10 124 / 61%) 0%, rgb(14 133 181 / 57%) 25%, rgb(14 133 181 / 57%) 75%, rgb(8 10 124 / 61%) 100%);
+      
       /*same background color of navbar*/
       background-position: center top;
   }
   .nav div.main_list ul li {
       width: 100%;
-      text-align: right;
+      text-align: center;
+      height: auto;
   }
   .nav div.main_list ul li a {
       text-align: center;
       width: 100%;
-      font-size: 14px;
+      margin: 10px;
+      box-sizing: border-box;
+      font-size: 23px;
       padding: 20px;
   }
   .nav div.media_button {
@@ -752,4 +753,70 @@ footer p{
 footer a {
   color: white;
   font-size: 14px;
+}
+/*responsive para tableta y mobile*/
+@media screen and (max-width: 768px) {
+  .nav div.logo{
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav div.main_list {
+    display: none;
+    position: absolute;
+    top: 65px; /* altura de tu barra de navegación */
+    left: 0;
+    width: 100%;
+    background-color: #217f8b; /* Color de fondo del menú */
+  }
+
+  .nav div.show_list {
+    display: block;
+  }
+/*fin del navbar*/
+/*institucional*/
+#Institucional .titulo .texto h5{
+  text-align: center;
+}
+  #Institucional .titulo .texto h2{
+    font-size: 20px;
+  }
+  .titulo{
+    flex-direction: column;
+  }
+  .titulo img{
+    margin: 0;
+    width: 100%;
+  }
+  .caracteristica{
+    flex-direction: column-reverse;
+  }
+  .caracteristica .texto_cuadrado {
+    max-width: 100%;
+  }
+  .cuadrado{
+    flex-direction: column;
+  }
+  .cuadrado img{
+    max-width: 100%;
+  }
+  .flotas{
+    flex-direction: column;
+  }
+  .text-flota {
+    max-width: 100%;
+  }
+/*modal*/
+.modal-content h5{
+  font-size: 20px;
+}
+#Servicios .modal-content p{
+  font-size: 13px;
+}
+.prev-list-mod a{
+font-size: 15px;
+}
+.prev-list-mod{
+  padding: 0;
+}
 }
