@@ -427,69 +427,48 @@ h2{
 .Historia {
   font-size: 18px;
   font-weight: 100;
+
+  padding: 10px;
+  clear: both; /* Asegura que la altura de .Historia se ajuste al contenido flotante */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin: 10px;
-  padding: 10px
 }
 
 p {
   margin: 0 0 10px; /* Ajusta el margen del párrafo según sea necesario */
 }
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px; /* Espacio entre las imágenes */
+.galeria-1 p{
+  text-align: left;
+
+}
+.Historia img{
+  width: 44%;
+  margin-right: 20px;
 }
 
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados para las imágenes */
-}
-.caracteristica {
+.caracteristica{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
   margin: 10px;
 }
-
-.cuadrado {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-
-.cuadrado img {
-  max-width: 30%; /* Ajusta el tamaño máximo de las imágenes */
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados para las imágenes */
-}
-
-.texto_cuadrado {
-  max-width: 60%; /* Ajusta el ancho máximo del área de texto */
+.caracteristica .texto_cuadrado p{
+  text-align: right;
   font-size: 18px;
+  font-weight: 100;
 }
-.flotas {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
+.caracteristica img {
+  margin-left: 20px;
+  width: 44%;
+  height: 100%;
 }
-
-.text-flota {
-  max-width: 60%; /* Ajusta el ancho máximo del área de texto */
+.final{
   font-size: 18px;
-}
-
-.camiones img {
-  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
-  height: auto;
-  border-radius: 8px; /* Bordes redondeados para la imagen */
-}
-.final p{
-  font-size: 18px;
+  font-weight: 100;
   text-align: center;
 }
-
 
 /*seccion servicio*/
 #Servicios {
@@ -788,23 +767,23 @@ footer a {
     margin: 0;
     width: 100%;
   }
-  .caracteristica{
+  .Historia{
     flex-direction: column-reverse;
   }
-  .caracteristica .texto_cuadrado {
-    max-width: 100%;
+  .Historia img{
+    width: 100%;
+    margin: 0;
   }
-  .cuadrado{
+  .caracteristica{
     flex-direction: column;
+    padding: 10px
   }
-  .cuadrado img{
-    max-width: 100%;
+  .caracteristica .texto_cuadrado p {
+    text-align: left;
   }
-  .flotas{
-    flex-direction: column;
-  }
-  .text-flota {
-    max-width: 100%;
+  .caracteristica img{
+    margin-left: 0;
+    width: 100%;
   }
 /*modal*/
 .modal-content h5{
